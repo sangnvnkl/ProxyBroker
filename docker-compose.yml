@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  proxybroker:
+    image: proxybroker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "13128:3128"
